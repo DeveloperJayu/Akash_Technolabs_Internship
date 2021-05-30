@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5579f1</color>
+    <color name="colorPrimaryDark">#5579f1</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#ffffff</color>
+    <color name="button">#24A0ED</color>
+
+    <color name="colorPrimaryLight">#63cbff</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorAppBackground">#F9F9F9</color>
+    <color name="colorGrey">#757575</color>
+    <color name="colorLightGrey">#F5F3F4</color>
+    <color name="colorLightGreyShade2">#e8e3e3</color>
+    <color name="colorLightGreyShade3">#383535</color>
+    <!--    <color name="colorControlActive">@color/colorWhite</color>-->
+    <!--    <color name="colorControlNormal">@color/colorWhite</color>-->
+
+    <!--Primitive Colors-->
+    <color name="colorWhite">#FFF</color>
+    <color name="colorRed">#F00</color>
+    <color name="colorGreen">#008137</color>
+    <color name="colorBlue">#00F</color>
+    <color name="colorYellow">#FF0</color>
+    <color name="colorMagenta">#F0F</color>
+    <color name="colorCyan">#0FF</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <!--    visitor status color-->
+    <color name="colorVisitorStatusUpcoming">#e65100</color>
+    <color name="colorVisitorStatusCheckedIn">#1b5e20</color>
+    <color name="colorVisitorStatusMeetingIn">#283593</color>
+    <color name="colorVisitorStatusMeetingOut">#b71c1c</color>
+    <color name="colorVisitorStatusCheckedOut">#212121</color>
+    <color name="colorVisitorStatusRoaming">#212121</color>
+</resources>
