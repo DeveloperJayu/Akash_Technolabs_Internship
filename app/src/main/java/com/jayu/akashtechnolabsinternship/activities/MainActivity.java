@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.jayu.akashtechnolabsinternship.R;
 import com.jayu.akashtechnolabsinternship.fragments.BMICalculatorFragment;
+import com.jayu.akashtechnolabsinternship.fragments.PrimeNumberCheckerFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setUpToolbar();
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.frameLayout,new BMICalculatorFragment())
+                .replace(R.id.frameLayout,new PrimeNumberCheckerFragment())
                 .commit();
     }
 

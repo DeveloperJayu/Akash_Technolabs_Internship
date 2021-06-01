@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.PrimeNumberCheckerFragment"
+    android:background="@color/colorLightGreyShade2">
+
+    <TextView
+        android:id="@+id/mainLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/mainLabel"
+        android:text="Prime Number Checker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/buttonLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/mainLabel">
+
+        <Button
+            android:id="@+id/btnSingleNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="Single Number"
+            android:background="@drawable/custom_button_clicked"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnNumberInterval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Number Interval"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/singleNumberRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLinear"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="visible">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSingleNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="Enter a number"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtSingleNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/sansProSemiBold"
+                android:gravity="start|top"
+                android:inputType="number"
+                android:longClickable="false"
+                android:textColor="@color/colorPrimaryText"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSingleNumberSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tilSingleNumber"
+            android:layout_marginTop="10dp"
+            android:text="Check"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtSingleNumberAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSingleNumberSubmit"
+            android:layout_marginTop="10dp"
+            style="@style/secondaryLabel"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/numberIntervalRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLinear"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNumberInterval1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="Enter first number"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNumberInterval1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/sansProSemiBold"
+                android:gravity="start|top"
+                android:inputType="number"
+                android:longClickable="false"
+                android:textColor="@color/colorPrimaryText"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNumberInterval2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="Enter second number"
+            android:layout_below="@+id/tilNumberInterval1"
+            app:hintAnimationEnabled="true"
+            android:layout_marginTop="10dp"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNumberInterval2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/sansProSemiBold"
+                android:gravity="start|top"
+                android:inputType="number"
+                android:longClickable="false"
+                android:textColor="@color/colorPrimaryText"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnNumberIntervalSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tilNumberInterval2"
+            android:layout_marginTop="10dp"
+            android:text="Check"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtNumberIntervalLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnNumberIntervalSubmit"
+            android:layout_marginTop="10dp"
+            style="@style/secondaryLabel"
+            android:text="Here is the list of prime numbers"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/primeIntervalRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/prime_number_interval_recycler_view_single_row"
+            android:layout_below="@+id/txtNumberIntervalLabel"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="25dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
