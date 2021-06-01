@@ -1,19 +1,16 @@
 package com.jayu.akashtechnolabsinternship.adapters;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.jayu.akashtechnolabsinternship.R;
 
 public class PrimeIntervalRecyclerAdapter extends RecyclerView.Adapter<PrimeIntervalRecyclerAdapter.ViewHolder> {
 
-    private String[] primeNumberArray;
+    private final String[] primeNumberArray;
 
     public PrimeIntervalRecyclerAdapter(String[] array){
         primeNumberArray = array;

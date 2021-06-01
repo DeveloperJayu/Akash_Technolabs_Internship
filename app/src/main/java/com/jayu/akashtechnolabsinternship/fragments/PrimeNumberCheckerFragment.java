@@ -1,11 +1,10 @@
 package com.jayu.akashtechnolabsinternship.fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
 import com.jayu.akashtechnolabsinternship.R;
 import com.jayu.akashtechnolabsinternship.adapters.PrimeIntervalRecyclerAdapter;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -26,13 +24,14 @@ public class PrimeNumberCheckerFragment extends Fragment {
     TextInputEditText txtSingleNumber, txtNumberInterval1, txtNumberInterval2;
     TextView txtSingleNumberAnswer, txtNumberIntervalLabel;
     RelativeLayout singleNumberRelative, numberIntervalRelative;
-    String primeIntervalArray[];
+    String[] primeIntervalArray;
     ArrayList<String> primeIntervalArrayList;
     boolean isPrime = false;
     RecyclerView primeIntervalRecyclerView;
     LinearLayoutManager primeIntervalLayoutManager;
     PrimeIntervalRecyclerAdapter primeIntervalRecyclerAdapter;
 
+    @SuppressLint("SetTextI18n")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -137,7 +136,7 @@ public class PrimeNumberCheckerFragment extends Fragment {
                 }
             }
             primeIntervalArray = new String[counter];
-            primeIntervalArrayList = new ArrayList<String>(Arrays.asList(primeIntervalArray));
+            primeIntervalArrayList = new ArrayList<>(Arrays.asList(primeIntervalArray));
             primeIntervalArrayList.clear();
 
             for (int i = intFirstNumber; i<= intSecondNumber; i++){

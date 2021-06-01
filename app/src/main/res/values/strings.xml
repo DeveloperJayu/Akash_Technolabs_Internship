@@ -2,4 +2,19 @@
     <string name="app_name">Akash Technolabs Internship</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prime_number_checker">Prime Number Checker</string>
+    <string name="single_number">Single Number</string>
+    <string name="number_interval">Number Interval</string>
+    <string name="enter_a_number">Enter a number</string>
+    <string name="check">Check</string>
+    <string name="enter_first_number">Enter first number</string>
+    <string name="enter_second_number">Enter second number</string>
+    <string name="here_is_the_list_of_prime_numbers">Here is the list of prime numbers</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="weight_in_kgs">Weight in kgs</string>
+    <string name="height_in_cms">Height in cms</string>
+    <string name="calculate">Calculate</string>
+    <string name="bmi">BMI:-</string>
+    <string name="result">Result:-</string>
+    <string name="healthy_weight">Healthy Weight:-</string>
 </resources>

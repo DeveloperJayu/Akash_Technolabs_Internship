@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/mainLabel"
-            android:text="BMI Calculator"
+            android:text="@string/bmi_calculator"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"/>
 
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/mainLabel"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:hint="Weight in kgs"
+            android:hint="@string/weight_in_kgs"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/layoutWeight"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:hint="Height in cms"
+            android:hint="@string/height_in_cms"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
@@ -78,7 +78,7 @@
             android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:layout_below="@id/layoutHeight"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
@@ -102,7 +102,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 style="@style/secondaryLabel"
-                android:text="BMI:-"
+                android:text="@string/bmi"
                 android:layout_weight="1"/>
 
             <TextView
@@ -131,7 +131,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 style="@style/secondaryLabel"
-                android:text="Result:-"
+                android:text="@string/result"
                 android:layout_weight="1"/>
 
             <TextView
@@ -160,7 +160,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 style="@style/secondaryLabel"
-                android:text="Healthy Weight:-"
+                android:text="@string/healthy_weight"
                 android:layout_weight="1"/>
 
             <TextView

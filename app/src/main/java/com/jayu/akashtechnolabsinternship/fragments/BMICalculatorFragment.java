@@ -1,22 +1,16 @@
 package com.jayu.akashtechnolabsinternship.fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.google.android.material.textfield.TextInputEditText;
 import com.jayu.akashtechnolabsinternship.R;
-
 import java.text.DecimalFormat;
 
 public class BMICalculatorFragment extends Fragment {
@@ -28,6 +22,7 @@ public class BMICalculatorFragment extends Fragment {
     LinearLayout bmiAnswerLinear,bmiResultLinear,bmiHealthyWeightLinear;
     float floatWeight,floatHeight,floatAnswer,floatHealthyWeight1,floatHealthyWeight2;
 
+    @SuppressLint("SetTextI18n")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -81,6 +76,7 @@ public class BMICalculatorFragment extends Fragment {
         setColor(floatAnswer);
     }
 
+    @SuppressLint("SetTextI18n")
     private void setColor(float floatAnswer) {
         if (floatAnswer<18.5){
             bmiResult.setText("Underweight");
