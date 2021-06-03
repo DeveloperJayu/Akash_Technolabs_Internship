@@ -17,4 +17,16 @@
     <string name="bmi">BMI:-</string>
     <string name="result">Result:-</string>
     <string name="healthy_weight">Healthy Weight:-</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="number_converter">Number Converter</string>
+    <string name="drawable_down">drawable down</string>
+    <string name="please_select_one_option">Please select one option</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="converted_numbers">Converted Numbers</string>
+    <string name="binary">Binary</string>
+    <string name="octal">Octal</string>
+    <string name="decimal">Decimal</string>
+    <string name="hexadecimal">Hexadecimal</string>
+    <string name="logo">logo</string>
 </resources>

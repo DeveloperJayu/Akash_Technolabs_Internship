@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuBMICalculator"
+        android:title="@string/bmi_calculator"/>
+
+    <item android:id="@+id/menuPrimeNumber"
+        android:title="@string/prime_number_checker"/>
+
+    <item android:id="@+id/menuNumberConverter"
+        android:title="@string/number_converter"/>
+
+</menu>

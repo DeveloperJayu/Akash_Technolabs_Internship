@@ -17,6 +17,7 @@ import com.jayu.akashtechnolabsinternship.R;
 import com.jayu.akashtechnolabsinternship.adapters.PrimeIntervalRecyclerAdapter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Objects;
 
 public class PrimeNumberCheckerFragment extends Fragment {
 
@@ -37,6 +38,8 @@ public class PrimeNumberCheckerFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_prime_number_checker, container, false);
+
+        requireActivity().setTitle("Prime Number Checker");
 
         btnSingleNumber = view.findViewById(R.id.btnSingleNumber);
         btnNumberInterval = view.findViewById(R.id.btnNumberInterval);
@@ -73,7 +76,7 @@ public class PrimeNumberCheckerFragment extends Fragment {
 
         btnSingleNumberSubmit.setOnClickListener(view13 -> {
             isPrime = false;
-            String strSingleNumber = txtSingleNumber.getText().toString().trim();
+            String strSingleNumber = Objects.requireNonNull(txtSingleNumber.getText()).toString().trim();
 
             if (strSingleNumber.isEmpty()){
                 txtSingleNumber.setError("Please enter number");
@@ -100,8 +103,8 @@ public class PrimeNumberCheckerFragment extends Fragment {
         });
 
         btnNumberIntervalSubmit.setOnClickListener(view14 -> {
-            String strFirstNumber = txtNumberInterval1.getText().toString().trim();
-            String strSecondNumber = txtNumberInterval2.getText().toString().trim();
+            String strFirstNumber = Objects.requireNonNull(txtNumberInterval1.getText()).toString().trim();
+            String strSecondNumber = Objects.requireNonNull(txtNumberInterval2.getText()).toString().trim();
 
             if (strFirstNumber.isEmpty()){
                 txtNumberInterval1.setError("Please enter number");
@@ -118,7 +121,7 @@ public class PrimeNumberCheckerFragment extends Fragment {
             int intSecondNumber = Integer.parseInt(strSecondNumber);
 
             if (intFirstNumber > intSecondNumber){
-                Toast.makeText(getActivity().getApplicationContext(),"First number must be less than or equals to Second number",Toast.LENGTH_LONG).show();
+                Toast.makeText(requireActivity().getApplicationContext(),"First number must be less than or equals to Second number",Toast.LENGTH_LONG).show();
                 return;
             }
 
