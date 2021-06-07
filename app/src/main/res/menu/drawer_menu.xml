@@ -10,4 +10,7 @@
     <item android:id="@+id/menuNumberConverter"
         android:title="@string/number_converter"/>
 
+    <item android:id="@+id/menuCreditCardChecker"
+        android:title="@string/credit_card_checker"/>
+
 </menu>

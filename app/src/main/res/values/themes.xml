@@ -40,4 +40,12 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <style name="error_appearance" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="normal_appearance" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
 </resources>

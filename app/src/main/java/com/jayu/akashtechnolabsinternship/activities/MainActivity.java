@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import com.google.android.material.navigation.NavigationView;
 import com.jayu.akashtechnolabsinternship.R;
 import com.jayu.akashtechnolabsinternship.fragments.BMICalculatorFragment;
+import com.jayu.akashtechnolabsinternship.fragments.CreditCardCheckerFragment;
 import com.jayu.akashtechnolabsinternship.fragments.NumberConverterFragment;
 import com.jayu.akashtechnolabsinternship.fragments.PrimeNumberCheckerFragment;
 
@@ -66,6 +67,13 @@ public class MainActivity extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.frameLayout,new NumberConverterFragment())
                         .addToBackStack("Number Converter")
+                        .commit();
+                drawerLayout.closeDrawer(GravityCompat.START);
+            }
+            else if (item.getItemId() == R.id.menuCreditCardChecker){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.frameLayout,new CreditCardCheckerFragment())
+                        .addToBackStack("Credit Card Checker")
                         .commit();
                 drawerLayout.closeDrawer(GravityCompat.START);
             }
