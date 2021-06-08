@@ -48,4 +48,9 @@
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
+    <style name="style_button" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/source_sans_pro_semibold</item>
+    </style>
+
 </resources>

@@ -13,4 +13,7 @@
     <item android:id="@+id/menuCreditCardChecker"
         android:title="@string/credit_card_checker"/>
 
+    <item android:id="@+id/menuTemperatureConverter"
+        android:title="@string/temperature_converter"/>
+
 </menu>

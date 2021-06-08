@@ -54,4 +54,12 @@
     <string name="securityCodeLengthError">Please check the security number</string>
     <string name="fNameStringError">Please check first name</string>
     <string name="lNameStringError">Please check last name</string>
+    <string name="banner_jayu">Banner Jayu</string>
+    <string name="temperature_converter">Temperature Converter</string>
+    <string name="enter_length">Enter Length</string>
+    <string name="converted_temperatures">Converted Temperatures</string>
+    <string name="celsius_c">Celsius °C</string>
+    <string name="fahrenheit_f">Fahrenheit F</string>
+    <string name="kelvin_k">Kelvin K</string>
+    <string name="enter_temperature">Enter Temperature</string>
 </resources>

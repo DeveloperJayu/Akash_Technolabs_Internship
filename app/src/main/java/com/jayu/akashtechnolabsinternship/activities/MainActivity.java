@@ -16,6 +16,7 @@ import com.jayu.akashtechnolabsinternship.fragments.BMICalculatorFragment;
 import com.jayu.akashtechnolabsinternship.fragments.CreditCardCheckerFragment;
 import com.jayu.akashtechnolabsinternship.fragments.NumberConverterFragment;
 import com.jayu.akashtechnolabsinternship.fragments.PrimeNumberCheckerFragment;
+import com.jayu.akashtechnolabsinternship.fragments.TemperatureConverterFragment;
 
 import java.util.Objects;
 
@@ -24,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +74,13 @@ public class MainActivity extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.frameLayout,new CreditCardCheckerFragment())
                         .addToBackStack("Credit Card Checker")
+                        .commit();
+                drawerLayout.closeDrawer(GravityCompat.START);
+            }
+            else if (item.getItemId() == R.id.menuTemperatureConverter){
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.frameLayout,new TemperatureConverterFragment())
+                        .addToBackStack("Temperature Converter")
                         .commit();
                 drawerLayout.closeDrawer(GravityCompat.START);
             }

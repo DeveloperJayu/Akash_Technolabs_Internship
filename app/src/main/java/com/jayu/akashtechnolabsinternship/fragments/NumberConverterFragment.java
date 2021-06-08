@@ -51,10 +51,6 @@ public class NumberConverterFragment extends Fragment {
         spinnerFrom.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 0){
-                    onNothingSelected(adapterView);
-                    return;
-                }
                 position = i;
             }
 
