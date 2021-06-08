@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/kebabAboutApp"
+        android:title="@string/about_app"/>
+
+    <item android:id="@+id/kebabMyOtherApps"
+        android:title="@string/my_other_applications"/>
+
+</menu>

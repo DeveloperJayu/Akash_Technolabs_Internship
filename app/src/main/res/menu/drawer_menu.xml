@@ -16,4 +16,10 @@
     <item android:id="@+id/menuTemperatureConverter"
         android:title="@string/temperature_converter"/>
 
+    <item android:id="@+id/menuAboutApp"
+        android:title="@string/about_app"/>
+
+    <item android:id="@+id/menuMyOtherApps"
+        android:title="@string/my_other_applications"/>
+
 </menu>

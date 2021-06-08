@@ -7,13 +7,17 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 import com.jayu.akashtechnolabsinternship.R;
 import com.jayu.akashtechnolabsinternship.fragments.BMICalculatorFragment;
 import com.jayu.akashtechnolabsinternship.fragments.CreditCardCheckerFragment;
+import com.jayu.akashtechnolabsinternship.fragments.HomeFragment;
 import com.jayu.akashtechnolabsinternship.fragments.NumberConverterFragment;
 import com.jayu.akashtechnolabsinternship.fragments.PrimeNumberCheckerFragment;
 import com.jayu.akashtechnolabsinternship.fragments.TemperatureConverterFragment;
@@ -35,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
         navigationView = findViewById(R.id.navigationView);
         toolbar = findViewById(R.id.toolbar);
         setUpToolbar();
-        setTitle("HOME");
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.frameLayout,new HomeFragment())
+                .commit();
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
                 MainActivity.this,
@@ -84,6 +91,18 @@ public class MainActivity extends AppCompatActivity {
                         .commit();
                 drawerLayout.closeDrawer(GravityCompat.START);
             }
+            else if (item.getItemId() == R.id.menuAboutApp){
+                Intent intent = new Intent(MainActivity.this,AboutAppActivity.class);
+                startActivity(intent);
+                drawerLayout.closeDrawer(GravityCompat.START);
+            }
+            else if (item.getItemId() == R.id.menuMyOtherApps){
+                String url = "https://play.google.com/store/apps/developer?id=Developer%20Jayu";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+                drawerLayout.closeDrawer(GravityCompat.START);
+            }
             return true;
         });
     }
@@ -92,5 +111,26 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.kebab_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.kebabAboutApp){
+            Intent intent = new Intent(MainActivity.this,AboutAppActivity.class);
+            startActivity(intent);
+        }
+        else if (item.getItemId() == R.id.kebabMyOtherApps){
+            String url = "https://play.google.com/store/apps/developer?id=Developer%20Jayu";
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
