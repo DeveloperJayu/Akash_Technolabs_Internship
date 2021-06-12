@@ -20,7 +20,7 @@ public class AboutAppActivity extends AppCompatActivity {
     ImageView imgGitHub,imgLinkedIn,imgGmail,imgTwitter,imgInstagram,imgPlayStore;
     TextView aboutAppDescription,aboutMeDescription;
 
-    final String appDescription = "";
+    final String appDescription = "I have created this application as my project in my 15 days Summer Internship at Akash Technolabs, Ahmedabad. This app contains 5 mini projects named BMI Calculator, Prime Number Checker, Number Converter, Credit Card Checker, Temperature Converter. BMI Calculator (Body mass index) is a measure of body fat based on height and weight that applies to adult men and women. Prime Number Checker contains single digit check for prime or you can fetch prime numbers between two numbers. Number Converter contains converter of Binary, Octal, Decimal, Hexadecimal to each other converter. Credit Card Checker works on LUHN’s algorithm which is used to check Credit card numbers. Temperature Converter contains converter of Celsius, Fahrenheit, and kelvin to each other converter.";
     final String meDescription = "My name is Jay Parmar. I'm a CE student. I am developer of Python, Android, Flutter, C language, C#, JAVA, etc. If you wanted any kind of help in any of given languages you can directly contact with me using Telegram. The link for same is given below. I am happy to help you. My all projects are open source. you can contact me or download any of my open source project source code from below mentioned button.";
 
     @Override

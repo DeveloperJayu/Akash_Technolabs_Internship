@@ -78,4 +78,8 @@
     <string name="imgplaystore">imgPlayStore</string>
     <string name="splash_screen">Splash Screen</string>
     <string name="developed_by_jayu">Developed By: Jayu</string>
+    <string name="bannerAds_testing">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="bannerAds_final">ca-app-pub-2623676331956176/8747211103</string>
+    <string name="interstitialAds_testing">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitialAds_final">ca-app-pub-2623676331956176/3685428440</string>
 </resources>
