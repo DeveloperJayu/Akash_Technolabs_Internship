@@ -2,27 +2,21 @@ package com.jayu.akashtechnolabsinternship.fragments;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.jayu.akashtechnolabsinternship.R;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
-import kotlin.text.Regex;
 
 public class CreditCardCheckerFragment extends Fragment {
 
@@ -72,26 +66,20 @@ public class CreditCardCheckerFragment extends Fragment {
             if (validator){
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(getContext());
                 alertDialog.setMessage("Card Verified Successfully");
-                alertDialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {}
-                });
+                alertDialog.setPositiveButton("OK", (dialogInterface, i) -> {});
                 alertDialog.show();
             }
 
         });
 
-        btnReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                txtCardNumber.setText("");
-                txtExpiry.setText("");
-                txtSecurityCode.setText("");
-                txtFName.setText("");
-                txtSName.setText("");
-                txtCardNumber.requestFocus();
-                setDefault();
-            }
+        btnReset.setOnClickListener(view12 -> {
+            txtCardNumber.setText("");
+            txtExpiry.setText("");
+            txtSecurityCode.setText("");
+            txtFName.setText("");
+            txtSName.setText("");
+            txtCardNumber.requestFocus();
+            setDefault();
         });
 
         return view;

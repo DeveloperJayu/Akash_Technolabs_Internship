@@ -15,8 +15,6 @@
     <color name="colorLightGrey">#F5F3F4</color>
     <color name="colorLightGreyShade2">#e8e3e3</color>
     <color name="colorLightGreyShade3">#383535</color>
-    <!--    <color name="colorControlActive">@color/colorWhite</color>-->
-    <!--    <color name="colorControlNormal">@color/colorWhite</color>-->
 
     <!--Primitive Colors-->
     <color name="colorWhite">#FFF</color>

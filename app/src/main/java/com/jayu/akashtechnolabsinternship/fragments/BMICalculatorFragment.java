@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.jayu.akashtechnolabsinternship.R;
 import java.text.DecimalFormat;
+import java.util.Objects;
 
 public class BMICalculatorFragment extends Fragment {
 
@@ -27,7 +28,7 @@ public class BMICalculatorFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        getActivity().setTitle("BMI Calculator");
+        requireActivity().setTitle("BMI Calculator");
         View view = inflater.inflate(R.layout.fragment_b_m_i_calculator, container, false);
 
         txtWeight = view.findViewById(R.id.txtWeight);
@@ -42,8 +43,8 @@ public class BMICalculatorFragment extends Fragment {
         bmiHealthyWeightLinear = view.findViewById(R.id.bmiHealthyWeightLinear);
 
         btnSubmit.setOnClickListener(view1 -> {
-            strWeight = txtWeight.getText().toString().trim();
-            strHeight = txtHeight.getText().toString().trim();
+            strWeight = Objects.requireNonNull(txtWeight.getText()).toString().trim();
+            strHeight = Objects.requireNonNull(txtHeight.getText()).toString().trim();
 
             if (strWeight.isEmpty()){
                 txtWeight.setError("Age is mandatory");

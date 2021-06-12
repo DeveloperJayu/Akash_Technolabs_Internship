@@ -38,7 +38,7 @@ public class PrimeIntervalRecyclerAdapter extends RecyclerView.Adapter<PrimeInte
 
         public ViewHolder(View view){
             super(view);
-            recyclerTextView = (TextView) view.findViewById(R.id.txtPrimeNumberIntervalAnswer);
+            recyclerTextView = view.findViewById(R.id.txtPrimeNumberIntervalAnswer);
         }
 
         public TextView getRecyclerTextView(){

@@ -76,4 +76,6 @@
     <string name="imgtwitter">imgTwitter</string>
     <string name="imgInstagram">imgInstagram</string>
     <string name="imgplaystore">imgPlayStore</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="developed_by_jayu">Developed By: Jayu</string>
 </resources>
