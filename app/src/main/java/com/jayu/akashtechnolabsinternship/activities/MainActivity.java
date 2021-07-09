@@ -145,8 +145,13 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.closeDrawer(GravityCompat.START);
             }
             else if (item.getItemId() == R.id.menuAboutApp){
-                Intent intent = new Intent(MainActivity.this,AboutAppActivity.class);
-                startActivity(intent);
+                if (mInterstitialAd != null){
+                    mInterstitialAd.show(MainActivity.this);
+                }
+                else {
+                    Intent intent = new Intent(MainActivity.this,AboutAppActivity.class);
+                    startActivity(intent);
+                }
                 drawerLayout.closeDrawer(GravityCompat.START);
             }
             else if (item.getItemId() == R.id.menuMyOtherApps){
